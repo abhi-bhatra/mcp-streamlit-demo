@@ -1,0 +1,5 @@
+fastmcp
+pandas
+streamlit
+openai
+requests
