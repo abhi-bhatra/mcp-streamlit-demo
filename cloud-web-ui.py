@@ -214,21 +214,10 @@ else:
     ]
 
 # Question input
-col1, col2 = st.columns([3, 1])
-with col1:
-    user_question = st.selectbox(
-        "Try these example questions:",
-        [""] + example_questions,
-        key="question_select"
-    )
-
-with col2:
-    if st.button("🔄 Get Server Info"):
-        user_question = "Tell me about this server deployment"
-
+user_question = ""
 # Custom question input
 custom_question = st.text_input(
-    "Or ask your own question:",
+    "Enter your question:",
     placeholder="e.g., Which course has the highest support ticket volume?"
 )
 
